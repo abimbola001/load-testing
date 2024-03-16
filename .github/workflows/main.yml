@@ -29,7 +29,7 @@ jobs:
         apache-jmeter-5.4.1/bin/jmeter -n -t FirstTestPlan.jmx -l results.jtl
 
     - name: Upload Test Results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: jmeter-results
         path: results.jtl
